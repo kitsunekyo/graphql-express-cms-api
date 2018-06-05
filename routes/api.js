@@ -1,0 +1,9 @@
+const express = require('express');
+const router = express.Router();
+const jwt = require('express-jwt');
+
+const UserController = require('./../controllers/UserController');
+
+router.get('/users', UserController.index);
+
+module.exports = router;
